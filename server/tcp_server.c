@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-08-31 20:26:58
  * @LastEditors: SingleBiu
- * @LastEditTime: 2024-12-16 20:39:28
+ * @LastEditTime: 2024-12-17 20:32:50
  * @Description: file content
  */
 #include<stdio.h>
@@ -24,53 +24,54 @@ int year, month ,day, hour, minute ,second;
 
 int i_get_initial_day()
 {
-	printf("Please input year:\n");
-	scanf("%d",&year);
-	if (year < 2024 )
-	{
-		printf("Invalid input\n");
-		return ERROR;
-	}
-	printf("Please input month:\n");
-	scanf("%d",&month);
-	if (month <= 0 || month >= 13)
-	{
-		printf("Invalid input\n");
-		return ERROR;
-	}
-	printf("Please input day:\n");
-	scanf("%d",&day);
-	if (day <= 0 || day >= 32)
-	{
-		printf("Invalid input\n");
-		return ERROR;
-	}
-	printf("Please input hour\n");
-	scanf("%d",&hour);
-	if (hour < 0 || hour >= 24)
-	{
-		printf("Invalid input\n");
-		return ERROR;
-	}
-	printf("Please input minute\n");
-	scanf("%d",&minute);
-	if (minute < 0 || minute >= 60)
-	{
-		printf("Invalid input\n");
-		return ERROR;
-	}
-	printf("Please input second\n");
-	scanf("%d",&second);
-	if (second < 0 || second >= 60)
-	{
-		printf("Invalid input\n");
-		return ERROR;
-	}
+	year, month ,day, hour, minute ,second = 0;
+	// printf("Please input year:\n");
+	// scanf("%d",&year);
+	// if (year < 2024 )
+	// {
+	// 	printf("Invalid input\n");
+	// 	return ERROR;
+	// }
+	// printf("Please input month:\n");
+	// scanf("%d",&month);
+	// if (month <= 0 || month >= 13)
+	// {
+	// 	printf("Invalid input\n");
+	// 	return ERROR;
+	// }
+	// printf("Please input day:\n");
+	// scanf("%d",&day);
+	// if (day <= 0 || day >= 32)
+	// {
+	// 	printf("Invalid input\n");
+	// 	return ERROR;
+	// }
+	// printf("Please input hour\n");
+	// scanf("%d",&hour);
+	// if (hour < 0 || hour >= 24)
+	// {
+	// 	printf("Invalid input\n");
+	// 	return ERROR;
+	// }
+	// printf("Please input minute\n");
+	// scanf("%d",&minute);
+	// if (minute < 0 || minute >= 60)
+	// {
+	// 	printf("Invalid input\n");
+	// 	return ERROR;
+	// }
+	// printf("Please input second\n");
+	// scanf("%d",&second);
+	// if (second < 0 || second >= 60)
+	// {
+	// 	printf("Invalid input\n");
+	// 	return ERROR;
+	// }
 
-	#if DEBUG
-		printf("Got year:%d month:%d day:%d hour:%d minutes:%d second:%d\n",
-		year,month,day,hour,minute,second);
-	#endif
+	// #if DEBUG
+	// 	printf("Got year:%d month:%d day:%d hour:%d minutes:%d second:%d\n",
+	// 	year,month,day,hour,minute,second);
+	// #endif
 
 	return 0;
 }
